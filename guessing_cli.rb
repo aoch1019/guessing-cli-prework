@@ -10,7 +10,7 @@ def run_guessing_game
     puts "Goodbye!"
   end
   
-  while input != comp_number && input != "exit"
+  while input != comp_number || input != "exit"
     puts "The computer guessed #{comp_number}."
     puts "Guess a number between 1 and 6."
     input = gets.chomp
