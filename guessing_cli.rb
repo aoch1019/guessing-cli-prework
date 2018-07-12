@@ -3,10 +3,9 @@ require 'pry'
 # Code your solution here!
 
 def run_guessing_game
-  comp_number = rand(1..6)
+  comp_number = rand(1..6).to_s
   puts "Guess a number between 1 and 6."
   input = gets.chomp
-  binding.pry
   if input == "exit"
     puts "Goodbye!"
   end
@@ -15,7 +14,7 @@ def run_guessing_game
     puts "The computer guessed #{comp_number}."
     puts "Guess a number between 1 and 6."
     input = gets.chomp
-    comp_number = rand(1..6)
+    comp_number = rand(1..6).to_s
     if input == "exit"
       puts "Goodbye!"
       break
